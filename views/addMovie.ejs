@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/form.css"> 
+    <title>Add New Movie</title>
+</head>
+<body>
+    <div class="form-container">
+        <h1 class="form-title">Add New Movie</h1>
+        <form action="/" method="POST" enctype="multipart/form-data" class="movie-form">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" name="title" class="form-input" required>
+
+            <label for="description" class="form-label">Description</label>
+            <textarea name="description" class="form-textarea" required></textarea>
+
+            <label for="releaseDate" class="form-label">Release Date</label>
+            <input type="date" name="releaseDate" class="form-input" required>
+
+            <label for="genre" class="form-label">Genre</label>
+            <input type="text" name="genre" class="form-input" required>
+
+            <label for="rating" class="form-label">Rating</label>
+            <input type="number" name="rating" min="1" max="10" class="form-input" required>
+
+            <label for="poster" class="form-label">Poster</label>
+            <input type="file" name="poster" class="form-file" required>
+
+            <button type="submit" class="form-button">Add Movie</button>
+        </form>
+    </div>
+</body>
+</html>
